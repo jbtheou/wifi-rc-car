@@ -7,5 +7,7 @@ engineering.
 
 PC application, android (minimal) application. 
 
+Thank to Hugo Descoubes and ENSICAEN. 
+
 See "Projet Wifi car" on youtube or projet.jbtheou.fr (French).
 
