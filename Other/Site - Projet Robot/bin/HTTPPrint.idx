@@ -1,0 +1,17 @@
++inc:header.inc
++inc:footer.inc
+vitesse_pwm
+sens
+direction
+direction_pwm
+avant_arriere
++zero_bute
++haut_bute
++bas_bute
++pot_value
+initvalue(2)
+initvalue(1)
+initvalue(0)
++etat_save
++incdir
++incvit

@@ -1,0 +1,30 @@
+carte wifi 2011  Revised: Thursday, June 23, 2011
+H Descoubes /O. Clouard          Revision: O.C
+
+
+
+
+
+
+
+Bill Of Materials           June 23,2011      10:53:56	Page1
+
+Item	Quantity	Reference	Part
+______________________________________________
+
+1	1	C1	100nf
+2	1	C2	47pF
+3	1	D1	LED
+4	9	J6,J7,J8,J9,J10,J11,J12,	CON1
+		J13,J14
+5	2	J16,J30	CON5
+6	4	J17,J29,J31,J32	CON3
+7	3	J18,J27,J28	CON2
+8	1	J19	CON9
+9	1	J20	CONN PLUG 15x2
+10	4	J21,J22,J23,J24	CON20
+11	2	R1,R5	470R
+12	1	R2	10R
+13	1	R3	10K
+14	1	R4	2.2K
+15	1	U1	24LC256

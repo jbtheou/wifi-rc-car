@@ -1,0 +1,77 @@
+AutoECO Report
+FILE-A: D:\ORCAD_G\PROJET_ORCAD9\HUGO\CARTE WIFI 2011\CARTE WIFI 2011-1.MAX
+FILE-B: D:\ORCAD_G\PROJET_ORCAD9\HUGO\CARTE WIFI 2011\CARTE WIFI 2011.MNL
+If "*EOF*" immediately follows, no changes were made
+Adding component J32
+Adding component J31
+Deleting C1.2 from net 3.3V
+Adding C1.1 to net 3.3V
+Adding J31.1 to net 3.3V_D
+Adding J32.1 to net 3.3V_G
+Deleting C2.1 from net GND
+Deleting C1.1 from net GND
+Adding C1.2 to net GND
+Adding C2.2 to net GND
+Adding J31.3 to net GND
+Adding J32.3 to net GND
+Deleting C2.2 from net N1556361
+Adding C2.1 to net N1556361
+Adding J22.10 to net RF2
+Adding J24.15 to net RE5
+Adding J24.17 to net RE7
+Adding J20.19 to net RD14
+Adding J24.19 to net RC2
+Adding J21.7 to net RA0
+Adding J24.16 to net RE6
+Adding J22.17 to net RA15
+Adding J22.8 to net RF4
+Adding J21.19 to net RA1
+Adding J21.11 to net RB4
+Adding J21.12 to net RB3
+Adding J24.6 to net RE0
+Adding J21.13 to net RA9
+Adding J22.9 to net RF5
+Adding J24.7 to net RE1
+Adding J24.4 to net RA6
+Adding J22.16 to net RA14
+Adding J21.20 to net RF13
+Adding J22.7 to net RD16
+Adding J21.6 to net RG9
+Adding J22.11 to net RF8
+Adding J24.14 to net RG16
+Adding J23.19 to net RD7
+Adding J23.10 to net RC14
+Adding J24.3 to net RG0
+Adding J22.1 to net RF12
+Adding J24.2 to net RG1
+Adding J24.8 to net RG15
+Adding J23.4 to net RD8
+Adding J23.18 to net RD6
+Adding J23.17 to net RD5
+Adding J23.7 to net RD11
+Adding J23.16 to net RD4
+Adding J24.10 to net RG13
+Adding J23.9 to net RC13
+Adding J23.15 to net RD13
+Adding J23.12 to net RD2
+Adding J24.9 to net RG14
+Adding J21.5 to net VPP
+Adding J23.2 to net 5V_D
+Adding J31.2 to net 5V_D
+Adding J22.19 to net 5V_G
+Adding J32.2 to net 5V_G
+Adding J29.1 to net RB2
+Adding J29.2 to net RB1
+Adding J29.3 to net RB0
+Adding J19.4 to net N1519216
+Adding J19.1 to net N1519204
+Adding J24.18 to net RC1
+Adding J24.5 to net RA7
+Adding J21.14 to net RA10
+Adding J22.12 to net RA2
+Adding J24.13 to net RE4
+Adding J24.12 to net RE3
+Adding J24.11 to net RE2
+Adding J24.20 to net RC3
+*EOF*
+No errors found

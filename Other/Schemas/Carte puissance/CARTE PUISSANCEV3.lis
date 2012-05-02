@@ -1,0 +1,213 @@
+Post Processor Report
+OrCAD FILE: D:\ORCAD_G\PROJET_ORCAD9\HUGO\CARTE PUISSANCE\CARTE PUISSANCEV3.MAX
+Wed Apr 13 13:26:54 2011
+
+*********************************************************
+
+Output file: D:\ORCAD_G\PROJET_ORCAD9\HUGO\CARTE PUISSANCE\CARTE PUISSANCEV3.TOP
+
+Aperture totals for D:\ORCAD_G\PROJET_ORCAD9\HUGO\CARTE PUISSANCE\CARTE PUISSANCEV3.TOP:
+---------------------------------------------------------
+D10:  0.0800 ROUND  --       0 Draws,       6 Flashes
+D11:  0.0800 SQUARE --       0 Draws,       3 Flashes
+D12:  0.0850 SQUARE --       0 Draws,       5 Flashes
+D13:  0.0850 ROUND  --       0 Draws,      13 Flashes
+D14:  0.1800 ROUND  --       0 Draws,      14 Flashes
+D15:  0.1000 ROUND  --       0 Draws,       2 Flashes
+D16:  0.0750 ROUND  --       0 Draws,       2 Flashes
+D17:  0.0750 SQUARE --       0 Draws,       2 Flashes
+D18:  0.1800 SQUARE --       0 Draws,       3 Flashes
+D19:  0.0750 x 0.1100 OBLONG    -----       8 Flashes
+D20:  0.0750 x 0.1100 RECTANGLE -----       4 Flashes
+D21:  0.1100 x 0.0550 OBLONG    -----      14 Flashes
+D22:  0.0050 ROUND  --       5 Draws,       0 Flashes
+D23:  0.0100 ROUND  --    2302 Draws,       0 Flashes
+D24:  0.1500 ROUND  --      13 Draws,       0 Flashes
+D25:  0.0800 ROUND  --       2 Draws,       0 Flashes
+D26:  0.0400 ROUND  --      26 Draws,       0 Flashes
+D27:  0.0800 ROUND  --       0 Draws,       5 Flashes
+D28:  0.0200 ROUND  --     211 Draws,       0 Flashes
+D29:  0.0118 ROUND  --      38 Draws,       0 Flashes
+D30:  0.0170 ROUND  --      25 Draws,       0 Flashes
+D31:  0.0140 ROUND  --       0 Draws,       5 Flashes
+D32:  0.0140 ROUND  --       0 Draws,      76 Flashes
+---------------------------------------------------------
+ 23 D-Codes      -----    2622 Draws,     162 Flashes
+
+*********************************************************
+
+Output file: D:\ORCAD_G\PROJET_ORCAD9\HUGO\CARTE PUISSANCE\CARTE PUISSANCEV3.BOT
+
+Aperture totals for D:\ORCAD_G\PROJET_ORCAD9\HUGO\CARTE PUISSANCE\CARTE PUISSANCEV3.BOT:
+---------------------------------------------------------
+D22:  0.0050 ROUND  --       5 Draws,       0 Flashes
+D25:  0.0800 ROUND  --      53 Draws,       0 Flashes
+D26:  0.0400 ROUND  --      91 Draws,       0 Flashes
+D27:  0.0800 ROUND  --       0 Draws,       5 Flashes
+D31:  0.0140 ROUND  --       0 Draws,       5 Flashes
+D33:  0.0800 ROUND  --       0 Draws,       6 Flashes
+D34:  0.0800 SQUARE --       0 Draws,       3 Flashes
+D35:  0.0850 SQUARE --       0 Draws,       5 Flashes
+D36:  0.0850 ROUND  --       0 Draws,      13 Flashes
+D37:  0.1800 ROUND  --       0 Draws,      14 Flashes
+D38:  0.1000 ROUND  --       0 Draws,       2 Flashes
+D39:  0.0750 ROUND  --       0 Draws,       2 Flashes
+D40:  0.0750 SQUARE --       0 Draws,       2 Flashes
+D41:  0.1800 SQUARE --       0 Draws,       3 Flashes
+D42:  0.0750 x 0.1100 OBLONG    -----       8 Flashes
+D43:  0.0750 x 0.1100 RECTANGLE -----       4 Flashes
+D44:  0.0630 x 0.0640 RECTANGLE -----       2 Flashes
+D45:  0.1100 x 0.0550 OBLONG    -----      14 Flashes
+D46:  0.0150 ROUND  --      87 Draws,       0 Flashes
+D47:  0.0140 ROUND  --       0 Draws,      76 Flashes
+---------------------------------------------------------
+ 20 D-Codes      -----     236 Draws,     164 Flashes
+
+*********************************************************
+
+Output file: D:\ORCAD_G\PROJET_ORCAD9\HUGO\CARTE PUISSANCE\CARTE PUISSANCEV3.SMT
+
+Aperture totals for D:\ORCAD_G\PROJET_ORCAD9\HUGO\CARTE PUISSANCE\CARTE PUISSANCEV3.SMT:
+---------------------------------------------------------
+D22:  0.0050 ROUND  --       5 Draws,       0 Flashes
+D33:  0.0800 ROUND  --       0 Draws,       6 Flashes
+D34:  0.0800 SQUARE --       0 Draws,       3 Flashes
+D35:  0.0850 SQUARE --       0 Draws,       5 Flashes
+D36:  0.0850 ROUND  --       0 Draws,      13 Flashes
+D38:  0.1000 ROUND  --       0 Draws,       2 Flashes
+D39:  0.0750 ROUND  --       0 Draws,       2 Flashes
+D40:  0.0750 SQUARE --       0 Draws,       2 Flashes
+D42:  0.0750 x 0.1100 OBLONG    -----       8 Flashes
+D43:  0.0750 x 0.1100 RECTANGLE -----       4 Flashes
+D45:  0.1100 x 0.0550 OBLONG    -----      14 Flashes
+D48:  0.1500 ROUND  --       0 Draws,      11 Flashes
+D49:  0.1300 ROUND  --       0 Draws,       3 Flashes
+D50:  0.1300 SQUARE --       0 Draws,       3 Flashes
+D51:  0.0550 ROUND  --       0 Draws,       5 Flashes
+---------------------------------------------------------
+ 15 D-Codes      -----       5 Draws,      81 Flashes
+
+*********************************************************
+
+Output file: D:\ORCAD_G\PROJET_ORCAD9\HUGO\CARTE PUISSANCE\CARTE PUISSANCEV3.SMB
+
+Aperture totals for D:\ORCAD_G\PROJET_ORCAD9\HUGO\CARTE PUISSANCE\CARTE PUISSANCEV3.SMB:
+---------------------------------------------------------
+D33:  0.0800 ROUND  --       0 Draws,       6 Flashes
+D34:  0.0800 SQUARE --       0 Draws,       3 Flashes
+D35:  0.0850 SQUARE --       0 Draws,       5 Flashes
+D36:  0.0850 ROUND  --       0 Draws,      13 Flashes
+D38:  0.1000 ROUND  --       0 Draws,       2 Flashes
+D39:  0.0750 ROUND  --       0 Draws,       2 Flashes
+D40:  0.0750 SQUARE --       0 Draws,       2 Flashes
+D42:  0.0750 x 0.1100 OBLONG    -----       8 Flashes
+D43:  0.0750 x 0.1100 RECTANGLE -----       4 Flashes
+D44:  0.0630 x 0.0640 RECTANGLE -----       2 Flashes
+D45:  0.1100 x 0.0550 OBLONG    -----      14 Flashes
+D48:  0.1500 ROUND  --       0 Draws,      11 Flashes
+D49:  0.1300 ROUND  --       0 Draws,       3 Flashes
+D50:  0.1300 SQUARE --       0 Draws,       3 Flashes
+D51:  0.0550 ROUND  --       0 Draws,       5 Flashes
+---------------------------------------------------------
+ 15 D-Codes      -----       0 Draws,      83 Flashes
+
+*********************************************************
+
+Output file: D:\ORCAD_G\PROJET_ORCAD9\HUGO\CARTE PUISSANCE\CARTE PUISSANCEV3.SST
+
+Aperture totals for D:\ORCAD_G\PROJET_ORCAD9\HUGO\CARTE PUISSANCE\CARTE PUISSANCEV3.SST:
+---------------------------------------------------------
+D22:  0.0050 ROUND  --       5 Draws,       0 Flashes
+D23:  0.0100 ROUND  --     184 Draws,       0 Flashes
+D52:  0.0080 ROUND  --     615 Draws,       9 Flashes
+---------------------------------------------------------
+  3 D-Codes      -----     804 Draws,       9 Flashes
+
+*********************************************************
+
+Output file: D:\ORCAD_G\PROJET_ORCAD9\HUGO\CARTE PUISSANCE\CARTE PUISSANCEV3.AST
+
+Aperture totals for D:\ORCAD_G\PROJET_ORCAD9\HUGO\CARTE PUISSANCE\CARTE PUISSANCEV3.AST:
+---------------------------------------------------------
+D22:  0.0050 ROUND  --       5 Draws,       0 Flashes
+D33:  0.0800 ROUND  --       0 Draws,       6 Flashes
+D34:  0.0800 SQUARE --       0 Draws,       3 Flashes
+D35:  0.0850 SQUARE --       0 Draws,       5 Flashes
+D36:  0.0850 ROUND  --       0 Draws,      13 Flashes
+D38:  0.1000 ROUND  --       0 Draws,       2 Flashes
+D39:  0.0750 ROUND  --       0 Draws,       2 Flashes
+D40:  0.0750 SQUARE --       0 Draws,       2 Flashes
+D42:  0.0750 x 0.1100 OBLONG    -----       8 Flashes
+D43:  0.0750 x 0.1100 RECTANGLE -----       4 Flashes
+D45:  0.1100 x 0.0550 OBLONG    -----      14 Flashes
+D48:  0.1500 ROUND  --       0 Draws,      11 Flashes
+D49:  0.1300 ROUND  --       0 Draws,       3 Flashes
+D50:  0.1300 SQUARE --       0 Draws,       3 Flashes
+D52:  0.0080 ROUND  --    1628 Draws,      10 Flashes
+---------------------------------------------------------
+ 15 D-Codes      -----    1633 Draws,      86 Flashes
+
+*********************************************************
+
+Output file: D:\ORCAD_G\PROJET_ORCAD9\HUGO\CARTE PUISSANCE\CARTE PUISSANCEV3.DRD
+
+Aperture totals for D:\ORCAD_G\PROJET_ORCAD9\HUGO\CARTE PUISSANCE\CARTE PUISSANCEV3.DRD:
+---------------------------------------------------------
+D22:  0.0050 ROUND  --       5 Draws,       0 Flashes
+D23:  0.0100 ROUND  --     952 Draws,       0 Flashes
+---------------------------------------------------------
+  2 D-Codes      -----     957 Draws,       0 Flashes
+
+
+*********************************************************
+
+Aperture totals for entire project:
+---------------------------------------------------------
+D10:  0.0800 ROUND  --       0 Draws,       6 Flashes
+D11:  0.0800 SQUARE --       0 Draws,       3 Flashes
+D12:  0.0850 SQUARE --       0 Draws,       5 Flashes
+D13:  0.0850 ROUND  --       0 Draws,      13 Flashes
+D14:  0.1800 ROUND  --       0 Draws,      14 Flashes
+D15:  0.1000 ROUND  --       0 Draws,       2 Flashes
+D16:  0.0750 ROUND  --       0 Draws,       2 Flashes
+D17:  0.0750 SQUARE --       0 Draws,       2 Flashes
+D18:  0.1800 SQUARE --       0 Draws,       3 Flashes
+D19:  0.0750 x 0.1100 OBLONG    -----       8 Flashes
+D20:  0.0750 x 0.1100 RECTANGLE -----       4 Flashes
+D21:  0.1100 x 0.0550 OBLONG    -----      14 Flashes
+D22:  0.0050 ROUND  --      30 Draws,       0 Flashes
+D23:  0.0100 ROUND  --    3438 Draws,       0 Flashes
+D24:  0.1500 ROUND  --      13 Draws,       0 Flashes
+D25:  0.0800 ROUND  --      55 Draws,       0 Flashes
+D26:  0.0400 ROUND  --     117 Draws,       0 Flashes
+D27:  0.0800 ROUND  --       0 Draws,      10 Flashes
+D28:  0.0200 ROUND  --     211 Draws,       0 Flashes
+D29:  0.0118 ROUND  --      38 Draws,       0 Flashes
+D30:  0.0170 ROUND  --      25 Draws,       0 Flashes
+D31:  0.0140 ROUND  --       0 Draws,      10 Flashes
+D32:  0.0140 ROUND  --       0 Draws,      76 Flashes
+D33:  0.0800 ROUND  --       0 Draws,      24 Flashes
+D34:  0.0800 SQUARE --       0 Draws,      12 Flashes
+D35:  0.0850 SQUARE --       0 Draws,      20 Flashes
+D36:  0.0850 ROUND  --       0 Draws,      52 Flashes
+D37:  0.1800 ROUND  --       0 Draws,      14 Flashes
+D38:  0.1000 ROUND  --       0 Draws,       8 Flashes
+D39:  0.0750 ROUND  --       0 Draws,       8 Flashes
+D40:  0.0750 SQUARE --       0 Draws,       8 Flashes
+D41:  0.1800 SQUARE --       0 Draws,       3 Flashes
+D42:  0.0750 x 0.1100 OBLONG    -----      32 Flashes
+D43:  0.0750 x 0.1100 RECTANGLE -----      16 Flashes
+D44:  0.0630 x 0.0640 RECTANGLE -----       4 Flashes
+D45:  0.1100 x 0.0550 OBLONG    -----      56 Flashes
+D46:  0.0150 ROUND  --      87 Draws,       0 Flashes
+D47:  0.0140 ROUND  --       0 Draws,      76 Flashes
+D48:  0.1500 ROUND  --       0 Draws,      33 Flashes
+D49:  0.1300 ROUND  --       0 Draws,       9 Flashes
+D50:  0.1300 SQUARE --       0 Draws,       9 Flashes
+D51:  0.0550 ROUND  --       0 Draws,      10 Flashes
+D52:  0.0080 ROUND  --    2243 Draws,      19 Flashes
+---------------------------------------------------------
+ 43 D-Codes      -----    6257 Draws,     585 Flashes
+
+
+No warnings or errors.

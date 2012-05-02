@@ -1,0 +1,134 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <meta content="text/html; charset=ISO-8859-1"
+ http-equiv="content-type">
+  <title>UBW32 Board Release Notes</title>
+  <meta content="Brian Schmalz" name="author">
+  <meta content="Release notes for UBW32 boards" name="description">
+</head>
+<body>
+<div style="text-align: center;"><a href="http://www.schmalzhaus.com"><big><big><span
+ style="font-weight: bold;"><img alt="SchmalzHaus logo"
+ src="../../Images/SchmalzHaus%20Logo%20Small.png"
+ style="border: 0px solid ; width: 143px; height: 59px;" align="left"></span></big></big></a><big><big><span
+ style="font-weight: bold;"><big>UBW32 Board Release Notes</big><br>
+</span><span style="font-weight: bold;"></span></big></big><big><big><small>By:
+Brian Schmalz</small><span style="font-weight: bold;"><br>
+</span></big></big><big><big><span style="font-weight: bold;"></span></big></big><big><big><span
+ style="font-weight: bold;"><a href="../index.html">Back to UBW32</a></span></big></big><br>
+<big><big><span style="font-weight: bold;"></span></big></big><big><big><span
+ style="font-weight: bold;"><br>
+</span></big></big>
+<div style="text-align: left;">
+<h2>Version 2.4 (First production board at SparkFun)</h2>
+<ul>
+  <li>To find the version number of your UBW32 hardware, check in th
+upper right hand corner of the board (next to J2). For example,&nbsp;
+v24, which is version 2.4.</li>
+  <li>In this version, the silk screen text was made too fat, which
+makes the port names extremely hard to read. The next version of the
+board (v2.5) will have this problem fixed.</li>
+  <li>In this version, the silk names for port E7, E6, E5, E4, E3
+and E2 were incorrectly labled as F7, F6, F5, F4, F3, and F2
+respectively. They are all located in the upper left hand section of
+the board. (See below.)</li>
+  <li>The J1 alternate power connector is not located on the .100"
+grid. This will not be fixed in future versions, as it is a space based
+layout constraint.</li>
+  <li>The purpose of J6 (USB) is so that you can add your own USB
+connector if you want. You'd need to do this if you wanted to use an
+OTG connector, or use a USB A socket (for host functionality), etc.</li>
+  <li>If you are going to use the board for USB host functionality, you
+will need to jumper the "Host" jumper (JP1) and supply the board with
+5V into the 5V net, or use the external power connector J1 or J2.</li>
+  <li>There is a footprint for a female USB A connector on the bottom
+of the board. SparkFun now sells<a
+ href="http://www.sparkfun.com/commerce/product_info.php?products_id=9011">
+this part</a>.Note that you must not try to use USB Host and USB Client
+at the same time (as there is only one USB engine in the PIC32.)</li>
+  <li>Note that even though all of the PIC32's I/O pins are brought out
+to headers, there are some pins that already have functions - see the
+schematic for complete details:</li>
+  <ul>
+    <li>RE0, RE1, RE2 and RE3 are used to control the four LEDs on the
+UBW32 - all will be set to outputs when the firmware starts running,
+and the USB LED will blink on and off when the UBW32 is connected to
+the PC<br>
+    </li>
+    <li>RE7 and RE6 are connected to the PRG and USR switches
+respectively - both will be set to inputs in the firmware<br>
+    </li>
+    <li>RB5 is hardware dedicated to the VBUSON function, and can not
+be used as an I/O pin under software control<br>
+    </li>
+  </ul>
+</ul>
+<big><big><span style="font-weight: bold;"></span></big></big></div>
+<big><big><span style="font-weight: bold;"></span></big></big></div>
+<span style="font-weight: bold;"></span><img
+ style="width: 1175px; height: 287px;" alt="Basic board layout for v24"
+ src="../EE/v24/v24_Guide.png"><br>
+<br>
+<br>
+<h2>Version 2.5</h2>
+<ul>
+  <li>Fixed E7, E6, E5, E4, E3
+and E2 silk screen </li>
+</ul>
+<img style="width: 1205px; height: 304px;" alt="Version 2.5 Guide"
+ src="../EE/v25/v25_Guide.png"><br>
+<h2>Version 2.6</h2>
+<ul>
+  <li>Replaced RC oscillator with real crystal to eleminate anhy USB
+connection problems (only a very few users reported this)<br>
+  </li>
+  <li>Removed all 5V pull up resistor pads from back of board to make
+space for crystal changes - use external pull up resistors instead<br>
+  </li>
+  <li>Added pads for 32,768Khz watch crystal and load caps</li>
+  <li>Switched to white silk screen</li>
+  <li>Increased D1 diode to 1 amp part</li>
+  <li>Updated all parts to latest SparkFun library parts (mainly the
+annular rings around the headers and the isolate value for the top and
+bottom pours) - required re-route of some of the board<br>
+  </li>
+  <li>Created two board versions, one called MX460 and one called
+MX795: Only difference is silk screen of board name, otherwise they are
+identical (Obviously they will have different CPUs when they are
+built.) The MX795 version should be available from SparkFun in Q4 2010.<br>
+  </li>
+</ul>
+<img style="width: 1209px; height: 317px;" alt="Version 2.6 Guide"
+ src="../EE/v26/v26_Guide.png"><br>
+<br>
+<div style="text-align: center;">Questions? E-mail me at <img
+ style="width: 177px; height: 22px;" alt="my e-mail address"
+ src="email.png" align="top"><br>
+</div>
+<br>
+<div style="text-align: center;"><a rel="license"
+ href="http://creativecommons.org/licenses/by/3.0/us/"><img
+ alt="Creative Commons License" src="88x31.png"
+ style="border: 0px solid ; width: 88px; height: 31px;"></a><br>
+<span xmlns:dc="http://purl.org/dc/elements/1.1/" property="dc:title">UBW32
+USB
+Bit
+Whacker</span> by <a xmlns:cc="http://creativecommons.org/ns#"
+ href="http://www.schmalzhaus.com/UBW32" property="cc:attributionName"
+ rel="cc:attributionURL">Brian Schmalz</a> is licensed under a <a
+ rel="license" href="http://creativecommons.org/licenses/by/3.0/us/">Creative
+Commons
+Attribution
+3.0
+United States License</a>.<br>
+Based on a work at <a xmlns:dc="http://purl.org/dc/elements/1.1/"
+ href="http://www.schmalzhaus.com/UBW32" rel="dc:source">www.schmalzhaus.com/UBW32</a>.<br>
+Permissions beyond the scope of this license may be available at <a
+ xmlns:cc="http://creativecommons.org/ns#"
+ href="http://www.schmalzhaus.com/UBW32" rel="cc:morePermissions">www.schmalzhaus.com/UBW32</a>.
+<br>
+</div>
+<br>
+</body>
+</html>

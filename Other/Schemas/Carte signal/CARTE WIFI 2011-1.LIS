@@ -1,0 +1,87 @@
+AutoECO Report
+FILE-A: D:\ORCAD_G\PROJET_ORCAD9\HUGO\CARTE WIFI 2011\CARTE WIFI 2011.MAX
+FILE-B: D:\ORCAD_G\PROJET_ORCAD9\HUGO\CARTE WIFI 2011\CARTE WIFI 2011.MNL
+If "*EOF*" immediately follows, no changes were made
+Adding package CON6
+Adding component J33
+Found footprint DIL6SQ from PRT file for part CON6, comp J33
+Adding J33.6 to net +VCC
+Adding U1.3 to net 3.3V_G
+Adding C1.1 to net 3.3V_G
+Adding U1.8 to net 3.3V_G
+Adding U1.7 to net 3.3V_G
+Deleting J16.5 from net GND
+Deleting J20.20 from net GND
+Deleting J20.18 from net GND
+Adding J33.5 to net GND
+Adding J20.16 to net GND
+Adding J20.10 to net GND
+Deleting J16.1 from net RA4
+Adding J33.1 to net RA4
+Deleting J16.3 from net RA5
+Adding J33.3 to net RA5
+Deleting J16.4 from net RD1
+Adding J33.4 to net RD1
+Deleting J16.2 from net RD3
+Adding J33.2 to net RD3
+Deleting J20.16 from net RD15
+Adding J20.20 to net RD15
+Deleting J20.10 from net RE8
+Adding J20.18 to net RE8
+Adding J22.10 to net RF2
+Adding J24.15 to net RE5
+Adding J24.17 to net RE7
+Adding J20.19 to net RD14
+Adding J24.19 to net RC2
+Adding J21.7 to net RA0
+Adding J24.16 to net RE6
+Adding J22.17 to net RA15
+Adding J22.8 to net RF4
+Adding J21.19 to net RA1
+Adding J21.11 to net RB4
+Adding J21.12 to net RB3
+Adding J24.6 to net RE0
+Adding J21.13 to net RA9
+Adding J22.9 to net RF5
+Adding J24.7 to net RE1
+Adding J24.4 to net RA6
+Adding J22.16 to net RA14
+Adding J21.20 to net RF13
+Adding J22.7 to net RD16
+Adding J21.6 to net RG9
+Adding J22.11 to net RF8
+Adding J24.14 to net RG16
+Adding J23.19 to net RD7
+Adding J23.10 to net RC14
+Adding J24.3 to net RG0
+Adding J22.1 to net RF12
+Adding J24.2 to net RG1
+Adding J24.8 to net RG15
+Adding J23.4 to net RD8
+Adding J23.18 to net RD6
+Adding J23.17 to net RD5
+Adding J23.7 to net RD11
+Adding J23.16 to net RD4
+Adding J24.10 to net RG13
+Adding J23.9 to net RC13
+Adding J23.15 to net RD13
+Adding J23.12 to net RD2
+Adding J24.9 to net RG14
+Adding J21.5 to net VPP
+Adding J29.1 to net RB2
+Adding J29.2 to net RB1
+Adding J29.3 to net RB0
+Adding J19.4 to net N1519216
+Adding J19.1 to net N1519204
+Adding J24.18 to net RC1
+Adding J24.5 to net RA7
+Adding J21.14 to net RA10
+Adding J22.12 to net RA2
+Adding J24.13 to net RE4
+Adding J24.12 to net RE3
+Adding J24.11 to net RE2
+Adding J24.20 to net RC3
+Deleting component J16
+Deleting net 3.3V
+*EOF*
+No errors found

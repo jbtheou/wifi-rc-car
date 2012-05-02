@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, HelloTabWidgetActivity!</string>
+    <string name="app_name">Wificar</string>
+    <string name="choose_prompt_vit">Pas de vitesse :</string>
+    <string name="choose_prompt_dir">Pas de direction :</string>
+    <string-array name="increment_array">
+    	<item>1</item>
+    	<item>2</item>
+    	<item>3</item>
+    	<item>4</item>
+    	<item>5</item>
+    	<item>6</item>
+    	<item>7</item>
+    	<item>8</item>
+    	<item>9</item>
+	</string-array>
+    	
+</resources>

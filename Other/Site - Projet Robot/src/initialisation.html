@@ -1,0 +1,69 @@
+~inc:header.inc~
+<div id="content">
+
+<div id="status">
+	<div id="loading" style="display:none">Erreur : <br />Connexion perdue.</div>
+	<div id="display">
+		<span style="float:right;font-size:9px;font-weight:normal;padding-top:8px;text-indent:0px"></span>
+		<p>Zero (centre) : <span id="zero" style="font-weight:normal">?</span></p>	
+		<p>Haut : <span id="haut" style="font-weight:normal">?</span></p>
+		<p>Bas	: <span id="bas" style="font-weight:normal">?</span></p>
+		<p>Pas D: <span id="incdir" style="font-weight:normal">?</span></p>
+		<p>Pas V: <span id="incvit" style="font-weight:normal">?</span></p>
+		</div>
+</div>
+
+<h2>Initialisation de la direction</h2>
+
+<p>Valeur du potentiometre : <span id="pot" style="font-weight:normal">?</span></p>	
+<form method="get" action="initialisation.html">
+<div class="examplebox">
+<b>Type de bute :</b> <select name="save_value">
+<option value="2">Zero</option>
+<option value="1">Haut</option>
+<option value="0">Bas</option>
+</select>&nbsp; 
+<br /><input type="submit" value="Sauver" style="margin-top:5px;">
+</div>
+</form>
+<form method="get" action="initialisation.html">
+<div class="examplebox">
+<b>Pas de direction :</b> <select name="incdir">
+<option value="9">9</option>
+<option value="8">8</option>
+<option value="7">7</option>
+<option value="6">6</option>
+<option value="5">5</option>
+<option value="4">4</option>
+<option value="3">3</option>
+<option value="2">2</option>
+<option value="1">1</option>
+</select>&nbsp; 
+<br /><input type="submit" value="Sauver" style="margin-top:5px;">
+</div>
+</form>
+<form method="get" action="initialisation.html">
+<div class="examplebox">
+<b>Pas de vitesse :</b> <select name="incvit">
+<option value="9">9</option>
+<option value="8">8</option>
+<option value="7">7</option>
+<option value="6">6</option>
+<option value="5">5</option>
+<option value="4">4</option>
+<option value="3">3</option>
+<option value="2">2</option>
+<option value="1">1</option>
+</select>&nbsp; 
+<br /><input type="submit" value="Sauver" style="margin-top:5px;">
+</div>
+</form>
+</div>
+
+<script type="text/javascript">
+<!--
+setTimeout("newAJAXCommand('status.xml', updateStatusinit, true)",500);
+//-->
+</script>
+~inc:footer.inc~
+

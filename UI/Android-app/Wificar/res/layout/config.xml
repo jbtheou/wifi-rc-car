@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="wrap_content" 
+android:layout_height="wrap_content"
+android:id="@+id/configLayout" 
+android:orientation="vertical" android:weightSum="1">
+<ScrollView android:id="@+id/ScrollView01"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent">
+<LinearLayout android:id="@+id/LinearLayout02"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:orientation="vertical">
+     <TextView android:text="@string/choose_prompt_vit" android:layout_width="wrap_content" android:id="@+id/textView1" android:textAppearance="?android:attr/textAppearanceLarge" android:layout_height="wrap_content"></TextView>
+     <Spinner android:id="@+id/spinner1" android:layout_width="150dp" android:layout_height="wrap_content" android:prompt="@string/choose_prompt_vit" ></Spinner>
+     <TextView android:text="@string/choose_prompt_dir" android:id="@+id/textView2" android:textAppearance="?android:attr/textAppearanceLarge" android:layout_height="wrap_content" android:layout_width="197dp"></TextView>
+     <Spinner android:id="@+id/spinner2" android:layout_height="wrap_content" android:layout_width="156dp" android:prompt="@string/choose_prompt_dir"></Spinner>
+     <TextView android:text="Mise en place des butées :" android:id="@+id/textView3" android:textAppearance="?android:attr/textAppearanceLarge" android:layout_height="wrap_content" android:layout_width="306dp"></TextView>
+     <TextView android:text="Butée gauche" android:layout_width="wrap_content" android:id="@+id/textView4" android:textAppearance="?android:attr/textAppearanceMedium" android:layout_height="wrap_content"></TextView>
+     <Button android:id="@+id/buttonLeft" android:text="Valider" android:layout_height="wrap_content" android:layout_width="fill_parent" android:onClick="OnclickHandler"></Button>
+     <TextView android:text="Butée droite" android:layout_width="wrap_content" android:id="@+id/textView5" android:textAppearance="?android:attr/textAppearanceMedium" android:layout_height="wrap_content"></TextView>
+     <Button android:id="@+id/buttonRight" android:text="Valider" android:layout_height="wrap_content" android:layout_width="fill_parent" android:onClick="OnclickHandler"></Button>
+     <TextView android:text="Centre" android:layout_width="wrap_content" android:id="@+id/textView6" android:textAppearance="?android:attr/textAppearanceMedium" android:layout_height="wrap_content"></TextView>
+     <Button android:id="@+id/buttonCenter" android:text="Valider" android:layout_height="wrap_content" android:layout_width="fill_parent" android:onClick="OnclickHandler"></Button>
+
+   </LinearLayout>
+  </ScrollView>
+   </LinearLayout>

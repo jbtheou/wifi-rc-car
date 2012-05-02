@@ -1,0 +1,624 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+
+
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+  <title>UBW32 (32 bit PIC32 based USB Bit Whacker) Project</title>
+  <meta content="Brian Schmalz" name="author">
+  <meta content="Main website for UBW32 project - a PIC32 based UBW deisgn" name="description">
+</head><body>
+<div style="text-align: center;"><a href="http://www.schmalzhaus.com/"><big><big><span style="font-weight: bold;"><img alt="SchmalzHaus logo" src="UBW32%20%2832%20bit%20PIC32%20based%20USB%20Bit%20Whacker%29%20Project_fichiers/SchmalzHaus%2520Logo%2520Small.png" style="border: 0px solid; width: 143px; height: 59px;" align="left"></span></big></big></a><big><big><span style="font-weight: bold;"><big>UBW32 (32 bit PIC32 based USB Bit
+Whacker)</big><br>
+</span><small>An inexpensive, simple input/output device to connect
+your computer to the real world.<br>
+With many pins and more horsepower. (At least compared to the original
+8-bit <a href="http://www.schmalzhaus.com/UBW">UBW</a>.)<br>
+By: Brian Schmalz</small><span style="font-weight: bold;"><br>
+</span></big></big><big><big><span style="font-weight: bold;"></span></big></big><big><big><span style="font-weight: bold;"><img style="border: 4px solid; width: 400px; height: 94px;" alt="UBW32 beta build" src="UBW32%20%2832%20bit%20PIC32%20based%20USB%20Bit%20Whacker%29%20Project_fichiers/UBW32_Beta2.JPG"><img style="border: 4px solid; width: 400px; height: 102px;" alt="UBW32 production board" src="UBW32%20%2832%20bit%20PIC32%20based%20USB%20Bit%20Whacker%29%20Project_fichiers/UBW32_v24_SparkFun_sm.JPG"><br>
+</span></big></big></div>
+<br>
+<h2><span style="font-weight: bold;">Description:</span></h2>
+The UBW32 is a small board that you can plug into your computer
+(running
+Windows, MacOS or Linux) via USB. The USB connection can power the
+board
+and allows you to send it commands from the computer. These commands
+allow you to interface your computer to the real world - like
+controlling things and getting input from things. The UBW32 can plug
+into a standard breadboard in several different ways, or you can wire
+directly to it. You can power it through the USB connection or from an
+external voltage source. It has 3 push buttons (Reset, and 2
+user-defined buttons) and 5 LEDs (Power, USB, and 3 user defined LEDs).
+It breaks out all of the PIC32's I/O pins to pins around the outside of
+the board. The firmware that comes with the UBW32 understands very
+simple commands that you can type to it in a terminal emulator. These
+commands allow it to do some powerful things, and allow your computer
+to do even more (when you write an application on your computer to talk
+to the UBW32). The UBW32 has 32KBytes of RAM and 512KBytes of Flash. It
+has 78 usable I/O pins, many of which can be used as analog inputs. The
+CPU runs at 80MHz and has significant hardware peripherals. The UBW32
+works with 3.3V I/O, but all digital I/O pins are 5V tolerant (as
+inputs). The UBW32 is based on the <a id="Uc_ComparisonChart21_r10_c_DeviceFamilyName_urlPIC32MX360F512L&lt;br&gt;" class="Controls" href="http://www.microchip.com/wwwproducts/Devices.aspx?dDocName=en534177" target="_top">PIC32MX460F512L</a> 32-bit CPU from <a href="http://www.microchip.com/">Microchip</a>.<br>
+<br>
+And you can even buy a UBW32 <a href="http://www.sparkfun.com/products/9713">directly
+from
+SparkFun.com
+for
+$40!</a> And they even sell it with a PIC32MX795 now. (03/06/2011)<br>
+<h2><span style="font-weight: bold;">UBW32 Hardware Features:</span></h2>
+(updated 03/06/2011 for new UBW32 MX795 version )<br>
+<ul>
+  <li>78 usable I/O pins - all header holes on .100" grid<br>
+  </li>
+  <li>73 usable I/O pins available along edges, allow for easy "DIP"
+style
+breadboard mounting</li>
+  <li>miniUSB connection - supplies power and full speed USB connection
+to PC</li>
+  <li>3.3V power regulator</li>
+  <li>5V power regulator allows higher voltage (battery or other) power
+input</li>
+  <li>Power Select switch allows selecting between USB and external
+power (acts as power-on switch)</li>
+  <li>Ground, 3.3V and 5V pins available on both sides for vertical
+breadboard mounting</li>
+  <li>5 LEDS - 1 for power, 4 under software control</li>
+  <li>3 push buttons - 1 for reset, 2 for software use</li>
+  <li>Header and footprint for USB Host connector - with the right
+software, allows for USB Host functionality</li>
+  <li>Minimal board size - very thin (.28" high, 4.4" long, 1" wide)
+and 2 mounting holes<br>
+  </li>
+  <li>Uses PIC32MX795 processor - 80MHz, 512K Flash, 128K RAM, MIPS
+based CPU core (free development tools from Microchip)<br>
+  </li>
+  <li>Input protection fuse allows 500mA from the power supply</li>
+  <li>External input power protected by diode</li>
+</ul>
+<h2><span style="font-weight: bold;">UBW32 Software Features:</span></h2>
+<ul>
+  <li>HID based bootloader allows for updating firmware without a
+hardware programmer - burn new firmware using only your PC (Mac,
+Windows or Linux)<br>
+  </li>
+  <li>UBW32 Firmware supports controlling every digital I/O pin using
+USB serial port (see <a href="http://www.schmalzhaus.com/UBW32/doc/UBW32Documentation_v1_4.html">Firmware
+1.4
+documentation</a> for exact command structure)</li>
+  <li>Bootloader and UBW32 Firmware software projects available below
+as examples for you to write your own code - make the UBW32 do anything
+you want!<br>
+  </li>
+</ul>
+If you have used a <a href="http://www.schmalzhaus.com/UBW">UBW</a> or
+<a href="http://www.arduino.cc/">Arduino</a> before and are frustrated
+by the lack
+of CPU power, lack of memory, lack of I/O pins, or lack of
+sophisticated software, the UBW32 may be just what you are looking for.
+While costing only slightly more than an 8-bit <a href="http://www.schmalzhaus.com/UBW">UBW</a>, (and less than some
+Arduinos) it has
+significantly more power, particularly in terms of CPU horsepower.<br>
+<br>
+The UBW32 is also a stand-alone development platform for the USB <a href="http://www.microchip.com/PIC32">PIC32</a>
+chip. It contains a simple to use USB bootloader so that you can write
+your own code and download it to the board without any additional tools
+or software.&nbsp; You can write your own code to do whatever you want.
+(Just like an Arduino or any other development board.)<br>
+<br>
+If you want to use a hardware debugger or programmer with the UBW32,
+you can easily connect to the UBW32 using the standard 5 ICSP pins.
+They are located along the upper left edge of the UBW32. I
+use a <a href="http://www.microchip.com/PICKIT2">PICKit</a><a href="http://www.microchip.com/PICKIT2">2</a> almost exclusively for
+UBW32 development. A PICKit2 or PICKit3 can plug directly into the ICSP
+pins on the UBW32 with a simple 5-pin header. You can also
+use PICKit3,&nbsp; <a href="http://www.microchip.com/ICD2">ICD2</a>, <a href="http://www.microchip.com/ICD3">ICD3 </a>or <a href="http://www.microchip.com/RealIce">RealIce </a>to program/debug
+if you want. This is all optional and not necessary unless you need to
+do hardware debugging of your code.<br>
+<br>
+The PIC32 chip is capable of doing USB OTG, USB Function and USB Host
+roles. There is a footprint on the bottom of the board for a USB
+connector that will allow you to plug any USB device into the UBW32.
+There is a jumper that allows you to power the VBUS 5V USB wire if you
+program your UBW32 to be a USB Host.<br>
+<h2><span style="font-weight: bold;">UBW32 News: </span><span style="font-weight: bold;"></span></h2>
+<h1><span style="font-weight: bold;"></span></h1>
+<ul>
+  <li>(03/06/11) SparkFun is now selling the new <a href="http://www.sparkfun.com/products/9713">UBW32 boards</a>, which
+have the MX795 processor and space for a 32KHz crystal<br>
+  </li>
+  <li>(10/01/11) Stephen Semmelroth has been creating videos
+illustrating some basic UBW32 concepts. Check them out: <a href="http://www.youtube.com/watch?v=y0d0p8xlLTI">HelloWorld</a> and <a href="http://www.youtube.com/watch?v=KOOZpQ1m0C0">Bootloader</a> are
+just two.</li>
+  <li>(10/01/11) SparkFun should (soon) have a PIC32MX795 based UBW32
+for sale.<br>
+  </li>
+  <li>(11/01/10) Added UBW32 Firmware v1.4 (see below under Firmware
+Versions)<br>
+  </li>
+  <li>(10/13/10) Added an <a href="http://www.schmalzhaus.com/Tools/SchmalzHausPublic.lbr">Egale
+footprint</a> of entire UBW32 board (thanks Cid Vilas for doing almost
+all the work!)<br>
+  </li>
+  <li>(08/29/10) Added hardware version v25 and v26 documenation to
+website.
+SparkFun has been shipping v25 for quite some time and I've forgotten
+to put up the files.V26 is going into production very shortly and will
+be available soon. (New hardware features include a real 8MHz crystal
+vs. an RC oscillator and pads for a 32KHz watch crystal for the RTC
+function.)<br>
+  </li>
+  <li>(08/29/10) Updated UBW32 Firmware, HID Bootloader, HelloWorld and
+HelloUSBWorld project to use latest unmodified Microchip USB stack
+folder from Microchip. All now compile with latest build tools (MPLAB,
+C32 and Microchip Application Library) from Microchip. See <a href="http://www.schmalzhaus.com/UBW32/doc/FirmwareBuildInstructions.html">Firmware
+Build Instructions</a> for more information on setting up build tools
+to
+build these projects.</li>
+  <li>(08/29/10) Worried about merging HEX files easily and cleanly
+(like the bootloader and your favorite firmware) into one HEX file to
+program into UBW32 using a hardware programmer? Well worry no more-
+Microchip has been kind enough to give me permission to re-distribute
+their HEXMATE.exe utility application (from Hi-Tech). I've written up a
+    <a href="http://www.schmalzhaus.com/Tools/HexmateInstructions.html">nice little page</a>
+about
+it.<br>
+  </li>
+  <li>(04/26/10) A new <a href="http://www.schmalzhaus.com/UBW32/doc/UBW32_FAQ.html">FAQ</a> page has
+appeared. Much will be added to it over time.<br>
+  </li>
+  <li>(11/01/09) As of (about) today, SparkFun will be shipping UBW32s
+with <a href="http://www.schmalzhaus.com/UBW32/FW/HIDBoot_v1_3_UBW32_v1_3.hex">this combined HEX file</a>
+- the latest bootloader (that fixes the problem with the BL command as
+noted below) and UBW32 Firmware version 1.3.<br>
+  </li>
+  <li>(11/01/09) Added <a href="http://www.schmalzhaus.com/UBW32/doc/UBW32BootloaderDocumentation.html">HID
+Bootloader
+Documentation</a> page<br>
+  </li>
+  <li>(11/01/09) Incompatibiliy between UBW32 firmware v1.3 and
+origional bootloader found - BL command breaks. Use firmware 1.2 or
+latest bootloader to allow BL command to work. Thanks Jan for finding
+this problem. <br>
+  </li>
+  <li>(09/14/09) Updated to <a href="http://www.schmalzhaus.com/UBW32/doc/UBW32Documentation_v1_3.html">UBW32
+firmware,
+version
+1.3
+posted</a>. Several changes necessary to support
+latest USB stack v2.5b from Microchip.<br>
+  </li>
+  <li>(09/07/09) Updated to <a href="http://www.schmalzhaus.com/UBW32/doc/UBW32Documentation_v1_2.html">UBW32
+firmware,
+version
+1.2
+posted</a>. Only change is fixing location of
+SoftwareKey variable so that BL command becomes reliable.<br>
+  </li>
+  <li>(08/26/09) Updated HIDBoot project (see below) - updated the old
+HIDBoot bootloader code to use the latest Microchip USB stack v2.5a.
+All features of the bootloader still function. You will need a hardware
+programmer (PICKit2, etc.) to use this new bootloader. There are NO
+functional differences that I can tell - if you're OK with the
+bootloader you've got, don't update.<br>
+  </li>
+  <li>(02/16/09) New <a href="http://www.schmalzhaus.com/UBW32/doc/UBW32Documentation_v1_1.html">UBW32
+firmware version 1.1</a> posted. No new features, just bug fixes to C,
+PI, PO and PD commands.</li>
+  <li>(02/13/09) WOW! Check this out - a totally self-contained
+development system that runs on PIC32 called the <a href="http://www.cpustick.com/index.htm">StickOS</a>. I get an e-mail
+out of the blue from Rich Testardi where he asks me to see if his
+software will run unmodified on the UBW32. Guess what! It DOES! You can
+find the HEX file for the UBW32 version of StickOS <a href="http://www.cpustick.com/downloads.htm">on this page</a>. This
+software is just the slickest thing - interactive debugging, BASIC,
+save files to Flash, profiling, timers, interrupts, and massive amounts
+of awesomeness. And all over a serial port! Make sure to use the UBW32
+HEX file, as it is built to work with our bootloader.&nbsp;&nbsp; You
+can download the StickOS HEX file just like a normal UBW32 firmware HEX
+file. Definitely check out StickOS.
+It also includes ZigBee support. We'll need to add that to the next
+UBW32 version. :-)</li>
+  <li>(01/31/09) I've now edited the nice projects that Alex Lee sent
+me so
+that they are location independent and compile (and work!) for UBW,
+UBW32 and Microchip's FSUSB demo board. See below for new set of files.</li>
+  <li>(01/23/09) Alex Lee has ported the Jan Axelson Generic HID demo
+to the UBW and UBW32! <a href="http://www.schmalzhaus.com/UBW/FW/FW_HID/usb%20device%20-%20generic%20hid.zip">Here
+is
+the
+zip
+file</a> for the project. In order to make it work, you need
+to replace <a href="http://www.schmalzhaus.com/UBW/FW/FW_HID/usb_function_hid.h">./microchip/Include/USB/usb_function_hid.h</a>
+and .<a href="http://www.schmalzhaus.com/UBW/FW/FW_HID/usb_function_hid.c">/microchip/USB/HID
+Device
+Driver/usb_function_hid.c</a> as well. Thanks so much Alex.</li>
+  <li>(1/18/2009) Added a very simple <a href="http://www.schmalzhaus.com/UBW32/FW/HelloUSBWorld">HelloUSBWorld
+project</a> - shows how to receive and send USB data with minimal code</li>
+  <li>(12/10/2008) Added very simple <a href="http://www.schmalzhaus.com/UBW32/FW/HelloWorld">HelloWorld projec</a>t
+-
+shows
+super
+simple
+LED
+output,
+switch
+input,
+and
+timing
+using
+ISR.</li>
+  <li>(12/04/2008) Added a 'guide' and release notes page for v24
+UBW32 hardware.</li>
+  <li>(12/02/2008) I will be adding more commands to the UBW32
+firmware
+starting in January. Send me e-mail if you have suggestions for what
+you'd like me to work on.</li>
+  <li>(12/01/2008) SparkFun has just announced that the <a href="http://www.sparkfun.com/commerce/product_info.php?products_id=8971">UBW32
+is
+now
+available
+for
+sale</a> at $40.</li>
+  <li>(11/18/2008) Added a <a href="http://www.youtube.com/watch?v=kiaJECGEtAM">YouTube video of the
+"T1" command</a> - lights up all I/O pins in turn, shows off basic
+UBW32 functionality</li>
+  <li>(11/17/2008) Added basic documentation for UBW32 Firmware 1.0</li>
+  <li>(11/12/2008) I've sent the combined HID Bootloader and UBW32
+firmware v1.0 HEX file to SparkFun for use in producing the first batch
+of boards.</li>
+  <li>(11/11/2008) I think the first version of firmware is ready.
+SparkFun has been working on bringing the v2.4 boards into production
+and soon UBW32s will be for sale at their site.</li>
+</ul>
+<h2><span style="font-weight: bold;">Hardware Versions:<br>
+</span></h2>
+<h1><span style="font-weight: bold;"></span></h1>
+<table style="text-align: left; width: 1028px; height: 144px;" border="1" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr align="center">
+      <td colspan="8" rowspan="1" style="vertical-align: top;"><span style="font-weight: bold;">UBW32 Hardware Versions Matrix</span><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><br>
+      </td>
+      <td style="vertical-align: top; font-weight: bold;">Schematic<br>
+      </td>
+      <td style="vertical-align: top; font-weight: bold;">Board<br>
+      </td>
+      <td style="vertical-align: top; font-weight: bold;">Picture<br>
+      </td>
+      <td style="vertical-align: top;"><span style="font-weight: bold;">Guide</span><br>
+      </td>
+      <td style="vertical-align: top;"><span style="font-weight: bold;">Eagle
+Files
+and
+BOM
+(zip)</span><br>
+      </td>
+      <td style="vertical-align: top;"><span style="font-weight: bold;">Release
+Notes</span><br>
+      </td>
+      <td style="vertical-align: top;">Grebers<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><span style="font-weight: bold;">Prototype1</span><br>
+      </td>
+      <td style="vertical-align: top;">N.A.<br>
+      </td>
+      <td style="vertical-align: top;">N.A. </td>
+      <td style="vertical-align: top;">N.A. </td>
+      <td style="vertical-align: top;">N.A. </td>
+      <td style="vertical-align: top;">N.A. </td>
+      <td style="vertical-align: top;">N.A. </td>
+      <td style="vertical-align: top;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><span style="font-weight: bold;">Prototype2</span><br>
+      </td>
+      <td style="vertical-align: top;">N.A. </td>
+      <td style="vertical-align: top;">N.A. </td>
+      <td style="vertical-align: top;">N.A. </td>
+      <td style="vertical-align: top;">N.A.</td>
+      <td style="vertical-align: top;">N.A. </td>
+      <td style="vertical-align: top;">N.A. </td>
+      <td style="vertical-align: top;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><span style="font-weight: bold;">v2.4
+-
+First
+production
+version</span> <br>
+      </td>
+      <td style="vertical-align: top;"><a href="http://www.schmalzhaus.com/UBW32/EE/v24/UBW32_v24.sch.pdf">Here</a><br>
+      </td>
+      <td style="vertical-align: top;"><a href="http://www.schmalzhaus.com/UBW32/EE/v24/UBW32_v24.brd.pdf">Here</a><br>
+      </td>
+      <td style="vertical-align: top;"><a href="http://www.schmalzhaus.com/UBW32/images/UBW32_v24_SparkFun.JPG">Here</a><br>
+      </td>
+      <td style="vertical-align: top;"><a href="http://www.schmalzhaus.com/UBW32/doc/BoardReleaseNotes.html">Here</a> <br>
+      </td>
+      <td style="vertical-align: top;"><a href="http://www.schmalzhaus.com/UBW32/EE/v24/UBW32_v24.zip">Here</a><br>
+      </td>
+      <td style="vertical-align: top;"><a href="http://www.schmalzhaus.com/UBW32/doc/BoardReleaseNotes.html">Here </a><br>
+      </td>
+      <td style="vertical-align: top;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><span style="font-weight: bold;">v2.5
+-
+Fixed
+silk
+screen
+for
+port
+E</span><br>
+      </td>
+      <td style="vertical-align: top;">Here<br>
+      </td>
+      <td style="vertical-align: top;">Here<br>
+      </td>
+      <td style="vertical-align: top;">Here<br>
+      </td>
+      <td style="vertical-align: top;"><a href="http://www.schmalzhaus.com/UBW32/doc/BoardReleaseNotes.html">Here</a><br>
+      </td>
+      <td style="vertical-align: top;">Here<br>
+      </td>
+      <td style="vertical-align: top;"><a href="http://www.schmalzhaus.com/UBW32/doc/BoardReleaseNotes.html">Here</a><br>
+      </td>
+      <td style="vertical-align: top;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><span style="font-weight: bold;">v2.6
+-
+New
+crystal,
+32KHz
+footprint</span><br>
+      </td>
+      <td style="vertical-align: top;"><a href="http://www.schmalzhaus.com/UBW32/EE/v26/UBW32_MX795_v26_sch.pdf">Here</a><br>
+      </td>
+      <td style="vertical-align: top;"><a href="http://www.schmalzhaus.com/UBW32/EE/v26/UBW32_MX795_v26_brd.pdf">Here</a><br>
+      </td>
+      <td style="vertical-align: top;">Here<br>
+      </td>
+      <td style="vertical-align: top;"><a href="http://www.schmalzhaus.com/UBW32/doc/BoardReleaseNotes.html">Here</a><br>
+      </td>
+      <td style="vertical-align: top;"><a href="http://www.schmalzhaus.com/UBW32/EE/v26/UBW32_v26.zip">Here</a><br>
+      </td>
+      <td style="vertical-align: top;"><a href="http://www.schmalzhaus.com/UBW32/doc/BoardReleaseNotes.html">Here</a><br>
+      </td>
+      <td style="vertical-align: top;"><a href="http://www.schmalzhaus.com/UBW32/EE/v26/MX795_Gerbers.zip">Here</a><br>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<h2><span style="font-weight: bold;"></span><span style="font-weight: bold;"> Firmware Versions (Source code and project
+files -
+browsable):</span></h2>
+<h2><span style="font-weight: bold;"></span></h2>
+<ul>
+  <li><a href="http://www.schmalzhaus.com/UBW32/FW/UBW32_v1_0">Firmware v1.0 project files</a>
+(depreciated) (<a href="http://www.schmalzhaus.com/UBW32/FW/UBW32_v1_0/D32.hex">HEX</a>, <a href="http://www.schmalzhaus.com/UBW32/FW/UBW32_v1_0/UBW32_v1_0.zip">ZIP</a>) (initial release,
+contains
+digital
+I/O commands only)</li>
+  <li><a href="http://www.schmalzhaus.com/UBW32/FW/UBW32_v1_1">Firmware v1.1 project files</a>
+(depreciated) (<a href="http://www.schmalzhaus.com/UBW32/FW/UBW32_v1_1/D32.hex">HEX</a>, <a href="http://www.schmalzhaus.com/UBW32/FW/UBW32_v1_1/UBW32_v1_1.zip">ZIP</a>) Minor bug fix to v1.1</li>
+  <li><a href="http://www.schmalzhaus.com/UBW32/FW/UBW32_v1_2">Firmware v1.2 project files</a>
+(depreciated) (<a href="http://www.schmalzhaus.com/UBW32/FW/UBW32_v1_2/D32.hex">HEX</a>, <a href="http://www.schmalzhaus.com/UBW32/FW/UBW32_v1_2/UBW32_v1_2.zip">ZIP</a>) Fixed problem with
+location of SoftwareKey variable for BL command.<br>
+  </li>
+  <li><a href="http://www.schmalzhaus.com/UBW32/FW/UBW32_v1_3">Firmware v1.3 project files</a>
+(depreciated) (<a href="http://www.schmalzhaus.com/UBW32/FW/UBW32_v1_3/D32.hex">HEX</a>, <a href="http://www.schmalzhaus.com/UBW32/FW/UBW32_v1_3/UBW32_v1_3.zip">ZIP</a>) Updated project to use
+MicrochipUSB stack v2.7<br>
+  </li>
+  <li><a href="http://www.schmalzhaus.com/UBW32/FW/UBW32_v1_4">Firmware v1.4 project files</a> (<a href="http://www.schmalzhaus.com/UBW32/FW/UBW32_v1_4/D32.hex">HEX</a>, <a href="http://www.schmalzhaus.com/UBW32/FW/UBW32_v1_4/UBW32_v1_4.zip">ZIP</a>) Added test commands - and
+builds properly with Microchip USB Stack v2.7<br>
+  </li>
+  <li><a href="http://www.schmalzhaus.com/UBW32/FW/HelloWorld">HelloWorld project files</a> (<a href="http://www.schmalzhaus.com/UBW32/FW/HelloWorld/HelloWorld32.hex">HEX</a>, <a href="http://www.schmalzhaus.com/UBW32/FW/HelloWorld/HelloWorld32.zip">ZIP</a>) - shows simple code (no
+USB) running on UBW32. Blinks an LED at different rates based upon
+button push.</li>
+  <li><a href="http://www.schmalzhaus.com/UBW32/FW/HelloUSBWorld">HelloUSBWorld
+project
+files</a> (<a href="http://www.schmalzhaus.com/UBW32/FW/HelloUSBWorld/HelloUSBWorld.hex">HEX</a>, <a href="http://www.schmalzhaus.com/UBW32/FW/HelloUSBWorld/HelloUSBWorld.zip">ZIP</a>)
+-
+shows
+simple
+USB
+sending
+and
+receiving
+running
+on
+USB32.</li>
+  <li>Generic HID demo from USB v2.3.1 stack, ported by
+Alex Lee (Original files from Alex)<br>
+  </li>
+  <ul>
+    <li><a href="http://www.schmalzhaus.com/UBW/FW/FW_HID/usb%20device%20-%20generic%20hid.zip">Here
+is
+the
+zip
+file</a> for the project. <br>
+    </li>
+    <li>Also replace <a href="http://www.schmalzhaus.com/UBW/FW/FW_HID/usb_function_hid.h">./microchip/Include/USB/usb_function_hid.h</a>
+      <br>
+    </li>
+    <li>and .<a href="http://www.schmalzhaus.com/UBW/FW/FW_HID/usb_function_hid.c">/microchip/USB/HID
+Device
+Driver/usb_function_hid.c</a><span style="font-weight: bold;"> <br>
+      </span></li>
+  </ul>
+  <li>Generic HID demo from USB v2.3.1 stack, ported by Alex Lee and
+modified by Brian Schmalz. This version is location independent - as
+long as the Microchip directory (with the UBW v2.3.1 stack is at the
+same level as the project folder - FW_HID_BPS) then it will work fine.
+There are no hard coded paths in any of the projects. Also I built and
+tested all three targets (UBW, UBW32 and FSUSB demo board) and they all
+work great. I've renamed the projects as well so as to be very clear
+which one is which.<br>
+  </li>
+  <ul>
+    <li><a href="http://www.schmalzhaus.com/UBW/FW/FW_HID_BPS/FW_HID_BPS.zip">Here
+is
+the
+zip
+file
+(FS_HID_BPS.zip)</a> for the project.</li>
+    <li><a href="http://www.schmalzhaus.com/UBW/FW/FW_HID_BPS">Here are
+all of the files in the project directory</a><br>
+    </li>
+    <li>Here is a <a href="http://www.schmalzhaus.com/UBW/FW/Microchip/Microchip.zip">zip
+file of the Microchip directory</a> - Microchip.zip (which must be at
+the same level as the FW_HID_BPS folder) - this is Microchip's USB
+v2.3.1 stack<br>
+    </li>
+    <li>Also replace <a href="http://www.schmalzhaus.com/UBW/FW/FW_HID/usb_function_hid.h">./microchip/Include/USB/usb_function_hid.h</a>
+(Unnecessary if you use the Microchip.zip from above)<br>
+    </li>
+    <li>and .<a href="http://www.schmalzhaus.com/UBW/FW/FW_HID/usb_function_hid.c">/microchip/USB/HID
+Device
+Driver/usb_function_hid.c</a><span style="font-weight: bold;"><span style="font-weight: bold;"><span style="font-weight: bold;"> </span></span></span>(Unnecessary
+if
+you
+use
+the
+Microchip.zip
+file
+from
+above)<br>
+    </li>
+  </ul>
+</ul>
+<ul>
+</ul>
+<h2><span style="font-weight: bold;">Bootloader:</span></h2>
+<h2><span style="font-weight: bold;"></span></h2>
+<ul>
+  <li><a href="http://www.schmalzhaus.com/UBW32/FW/HIDBoot">UBW32 HID Bootloader project files</a> (<a href="http://www.schmalzhaus.com/UBW32/FW/HIDBoot/UBW32_HIDBoot_MX460.hex">HEX-For MX460 CPUs,</a> <a href="http://www.schmalzhaus.com/UBW32/FW/HIDBoot/UBW32_HIDBoot_MX795.hex">HEX-For MX795 CPUs</a>, <a href="http://www.schmalzhaus.com/UBW32/FW/HIDBoot/HIDBoot.zip">ZIP</a>) (updated from inital release to
+work properly with Microchip's v2.7 USB stack.)<br>
+  </li>
+</ul>
+<h2>Driver Files:</h2>
+<ul>
+  <li><a href="http://www.schmalzhaus.com/UBW32/FW/UBW32inf.zip">UBW32 Driver Files</a> : Contains the
+INF file that will work under Windows 2K, XP, Vista and Win7</li>
+</ul>
+<h2><span style="font-weight: bold;">USB Framework Files: <br>
+</span></h2>
+<ul>
+  <li><span style="font-weight: bold;"></span>See <a href="http://www.schmalzhaus.com/UBW32/doc/FirmwareBuildInstructions.html">Firmware Build
+Instructions</a>
+for more information and download links</li>
+</ul>
+<h2><span style="font-weight: bold;"></span></h2>
+<h2><span style="font-weight: bold;">Documentation:</span></h2>
+<ul>
+  <li><a href="http://www.schmalzhaus.com/UBW32/doc/UBW32BootloaderDocumentation.html">HID
+Bootloader&nbsp;
+Documentation</a> and instructions on how to put new firmware HEX files
+on
+your UBW32 using the built-in HID Bootloader<br>
+  </li>
+  <li>Firmware versions<br>
+  </li>
+  <ul>
+    <li><a href="http://www.schmalzhaus.com/UBW32/doc/UBW32Documentation_v10.html">Firmware v1.0
+Documentation</a> (First released version, shipped from SparkFun
+starting 11/11/2008)</li>
+    <li><a href="http://www.schmalzhaus.com/UBW32/doc/UBW32Documentation_v1_1.html">Firmware v1.1
+Documentation</a> (Just a minor bug-fix to 1.0 : 2/16/09)</li>
+    <li><a href="http://www.schmalzhaus.com/UBW32/doc/UBW32Documentation_v1_2.html">Firmware v1.2
+Documentation</a> (Just a minor bug-fix to 1.1 : 9/07/09)</li>
+    <li><a href="http://www.schmalzhaus.com/UBW32/doc/UBW32Documentation_v1_3.html">Firmware v1.3
+Documentation</a> (Updated files to use USB v2.7 stack : 8/29/10)</li>
+    <li><a href="http://www.schmalzhaus.com/UBW32/doc/UBW32Documentation_v1_4.html">Firmware v1.4
+Documentation</a> (T2 command added : 11/01/10)</li>
+  </ul>
+  <li><a href="http://www.schmalzhaus.com/UBW/Doc/UBW_LB_CodeSnippits.html">Liberty Basic
+routines</a>
+- common UBW32 code snippets (Shared with UBW web page)</li>
+  <li><a href="http://www.schmalzhaus.com/UBW32/doc/UBW32_FAQ.html">UBW32 FAQ</a> - read this first if
+you have questions - your may be surprised!</li>
+  <li><a href="http://www.schmalzhaus.com/UBW32/doc/HexmateInstructions.html">HEXMATE.EXE instructions</a>
+- read this if you need to easily merge HEX files</li>
+  <li><a href="http://www.schmalzhaus.com/UBW32/doc/FirmwareBuildInstructions.html">Firmware Build
+Instructions</a> - check this out if you want to know how to build the
+example projects on this website<br>
+  </li>
+</ul>
+<h2><span style="font-weight: bold;">Important Links: <br>
+</span></h2>
+<span style="font-weight: bold;"></span>(Grab the first three in order
+to build code for the UBW32)
+<ul>
+  <li><a href="http://www.microchip.com/mplab">Microchip MPLAB</a>
+(Microchip's free IDE for editing, compiling, debugging code)</li>
+  <li><a href="http://www.microchip.com/C32">Microchip C32</a> compiler
+(for
+building bootloader and firmware - I used student edition which is free)</li>
+  <li><a href="http://www.microchip.com/MAL">Microchip Application
+Library (MAL)</a> Download this entire thing to get all of the latest
+USB stack and example code projects from Microchip<br>
+  </li>
+  <li><a href="http://www.microchip.com/usb">Microchip's
+USB pages</a> (including information on the USB PICs as well as app
+notes and firmware examples - all UBW32 code is based on their USB
+framework v2.3)<br>
+  </li>
+  <li><a href="http://www.libertybasic.com/">Liberty Basic</a> (for the
+PC
+side of things - what an awesome language - I used free version)</li>
+  <li><a href="http://www.cadsoft.de/">Eagle</a> (for editing the
+schematic
+and board layouts - the free version will allow you to load and edit
+the files)</li>
+  <li><a href="http://www.batchpcb.com/">BatchPCB </a>(where to get
+higher quality boards made - this is a sister company to SparkFun)<br>
+  </li>
+  <li><a href="http://www.microchip.com/stellent/idcplg?IdcService=SS_GET_PAGE&amp;nodeId=2601">Microchip
+PIC32
+documentation
+(datasheet)</a> (read and re-read this if you
+want to write your own firmware)</li>
+  <li><a href="http://www.schmalzhaus.com/UBW32/FW/UBW32inf.zip"><span style="font-weight: bold;"></span></a><a href="http://www.schmalzhaus.com/UBW32/FW/UBW32inf.zip">UBW32 Driver Files</a> : Contains the
+INF file that will work under Windows 2K, XP, Vista and Win7</li>
+</ul>
+<div style="text-align: center;"><br>
+Questions? E-mail me at <img style="width: 177px; height: 22px;" alt="my e-mail address" src="UBW32%20%2832%20bit%20PIC32%20based%20USB%20Bit%20Whacker%29%20Project_fichiers/email.png" align="top"><br>
+</div>
+<br>
+<div style="text-align: center;"><a rel="license" href="http://creativecommons.org/licenses/by/3.0/us/"><img alt="Creative Commons License" style="border-width: 0pt;" src="UBW32%20%2832%20bit%20PIC32%20based%20USB%20Bit%20Whacker%29%20Project_fichiers/88x31.png"></a><br>
+<span xmlns:dc="http://purl.org/dc/elements/1.1/" property="dc:title">UBW32
+USB
+Bit
+Whacker</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://www.schmalzhaus.com/UBW32" property="cc:attributionName" rel="cc:attributionURL">Brian Schmalz</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/us/">Creative
+Commons
+Attribution
+3.0
+United
+States
+License</a>.<br>
+Based on a work at <a xmlns:dc="http://purl.org/dc/elements/1.1/" href="http://www.schmalzhaus.com/UBW32" rel="dc:source">www.schmalzhaus.com/UBW32</a>.<br>
+Permissions beyond the scope of this license may be available at <a xmlns:cc="http://creativecommons.org/ns#" href="http://www.schmalzhaus.com/UBW32" rel="cc:morePermissions">www.schmalzhaus.com/UBW32</a>.
+<br>
+</div>
+<br>
+<br>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script src="UBW32%20%2832%20bit%20PIC32%20based%20USB%20Bit%20Whacker%29%20Project_fichiers/ga.js" type="text/javascript"></script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-11764490-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body></html>

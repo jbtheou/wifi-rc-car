@@ -1,0 +1,208 @@
+Post Processor Report
+OrCAD FILE: D:\ORCAD_G\PROJET_ORCAD9\HUGO\CARTE WIFI 2011\CARTE WIFI 2011-5.MAX
+Wed Jun 22 16:47:58 2011
+
+*********************************************************
+
+Output file: D:\ORCAD_G\PROJET_ORCAD9\HUGO\CARTE WIFI 2011\CARTE WIFI 2011-5.TOP
+
+Aperture totals for D:\ORCAD_G\PROJET_ORCAD9\HUGO\CARTE WIFI 2011\CARTE WIFI 2011-5.TOP:
+---------------------------------------------------------
+D10:  0.0850 ROUND  --       0 Draws,      10 Flashes
+D11:  0.0800 ROUND  --       0 Draws,      93 Flashes
+D12:  0.0800 SQUARE --       0 Draws,       8 Flashes
+D13:  0.1000 ROUND  --       0 Draws,       7 Flashes
+D14:  0.0850 SQUARE --       0 Draws,       2 Flashes
+D15:  0.0750 ROUND  --       0 Draws,       2 Flashes
+D16:  0.0750 SQUARE --       0 Draws,       2 Flashes
+D17:  0.0787 x 0.0236 RECTANGLE -----     116 Flashes
+D18:  0.1300 ROUND  --       0 Draws,       1 Flashes
+D19:  0.1300 SQUARE --       0 Draws,       1 Flashes
+D20:  0.0700 x 0.0250 RECTANGLE -----       8 Flashes
+D21:  0.0700 ROUND  --       0 Draws,       1 Flashes
+D22:  0.0500 ROUND  --       4 Draws,       0 Flashes
+D23:  0.0700 ROUND  --       0 Draws,       1 Flashes
+D24:  0.0250 ROUND  --      53 Draws,       1 Flashes
+D25:  0.0700 ROUND  --       0 Draws,       6 Flashes
+D26:  0.0100 ROUND  --     115 Draws,       0 Flashes
+D27:  0.0300 ROUND  --       3 Draws,       0 Flashes
+D28:  0.0150 ROUND  --      83 Draws,       0 Flashes
+D29:  0.0200 ROUND  --       3 Draws,       0 Flashes
+D30:  0.0140 ROUND  --       0 Draws,       7 Flashes
+D31:  0.0140 ROUND  --       0 Draws,     127 Flashes
+---------------------------------------------------------
+ 22 D-Codes      -----     261 Draws,     393 Flashes
+
+*********************************************************
+
+Output file: D:\ORCAD_G\PROJET_ORCAD9\HUGO\CARTE WIFI 2011\CARTE WIFI 2011-5.BOT
+
+Aperture totals for D:\ORCAD_G\PROJET_ORCAD9\HUGO\CARTE WIFI 2011\CARTE WIFI 2011-5.BOT:
+---------------------------------------------------------
+D22:  0.0500 ROUND  --       4 Draws,       0 Flashes
+D24:  0.0250 ROUND  --      35 Draws,       0 Flashes
+D25:  0.0700 ROUND  --       0 Draws,       7 Flashes
+D26:  0.0100 ROUND  --     126 Draws,       0 Flashes
+D30:  0.0140 ROUND  --       0 Draws,       7 Flashes
+D31:  0.0140 ROUND  --       0 Draws,     127 Flashes
+D32:  0.0850 ROUND  --       0 Draws,      10 Flashes
+D33:  0.0800 ROUND  --       0 Draws,      93 Flashes
+D34:  0.0800 SQUARE --       0 Draws,       8 Flashes
+D35:  0.1000 ROUND  --       0 Draws,       7 Flashes
+D36:  0.0850 SQUARE --       0 Draws,       2 Flashes
+D37:  0.0750 ROUND  --       0 Draws,       2 Flashes
+D38:  0.0750 SQUARE --       0 Draws,       2 Flashes
+D39:  0.1300 ROUND  --       0 Draws,       1 Flashes
+D40:  0.1300 SQUARE --       0 Draws,       1 Flashes
+D41:  0.0700 ROUND  --       0 Draws,       1 Flashes
+D42:  0.0400 ROUND  --      13 Draws,       0 Flashes
+---------------------------------------------------------
+ 17 D-Codes      -----     178 Draws,     268 Flashes
+
+*********************************************************
+
+Output file: D:\ORCAD_G\PROJET_ORCAD9\HUGO\CARTE WIFI 2011\CARTE WIFI 2011-5.SMT
+
+Aperture totals for D:\ORCAD_G\PROJET_ORCAD9\HUGO\CARTE WIFI 2011\CARTE WIFI 2011-5.SMT:
+---------------------------------------------------------
+D22:  0.0500 ROUND  --       4 Draws,       0 Flashes
+D32:  0.0850 ROUND  --       0 Draws,      10 Flashes
+D33:  0.0800 ROUND  --       0 Draws,      93 Flashes
+D34:  0.0800 SQUARE --       0 Draws,       8 Flashes
+D35:  0.1000 ROUND  --       0 Draws,       7 Flashes
+D36:  0.0850 SQUARE --       0 Draws,       2 Flashes
+D37:  0.0750 ROUND  --       0 Draws,       2 Flashes
+D38:  0.0750 SQUARE --       0 Draws,       2 Flashes
+D39:  0.1300 ROUND  --       0 Draws,       1 Flashes
+D40:  0.1300 SQUARE --       0 Draws,       1 Flashes
+D43:  0.0789 x 0.0236 RECTANGLE -----     116 Flashes
+D44:  0.0750 x 0.0300 RECTANGLE -----       8 Flashes
+D45:  0.0550 ROUND  --       0 Draws,       1 Flashes
+D46:  0.0550 ROUND  --       0 Draws,       7 Flashes
+---------------------------------------------------------
+ 14 D-Codes      -----       4 Draws,     258 Flashes
+
+*********************************************************
+
+Output file: D:\ORCAD_G\PROJET_ORCAD9\HUGO\CARTE WIFI 2011\CARTE WIFI 2011-5.SMB
+
+Aperture totals for D:\ORCAD_G\PROJET_ORCAD9\HUGO\CARTE WIFI 2011\CARTE WIFI 2011-5.SMB:
+---------------------------------------------------------
+D32:  0.0850 ROUND  --       0 Draws,      10 Flashes
+D33:  0.0800 ROUND  --       0 Draws,      93 Flashes
+D34:  0.0800 SQUARE --       0 Draws,       8 Flashes
+D35:  0.1000 ROUND  --       0 Draws,       7 Flashes
+D36:  0.0850 SQUARE --       0 Draws,       2 Flashes
+D37:  0.0750 ROUND  --       0 Draws,       2 Flashes
+D38:  0.0750 SQUARE --       0 Draws,       2 Flashes
+D39:  0.1300 ROUND  --       0 Draws,       1 Flashes
+D40:  0.1300 SQUARE --       0 Draws,       1 Flashes
+D45:  0.0550 ROUND  --       0 Draws,       1 Flashes
+D46:  0.0550 ROUND  --       0 Draws,       7 Flashes
+---------------------------------------------------------
+ 11 D-Codes      -----       0 Draws,     134 Flashes
+
+*********************************************************
+
+Output file: D:\ORCAD_G\PROJET_ORCAD9\HUGO\CARTE WIFI 2011\CARTE WIFI 2011-5.SST
+
+Aperture totals for D:\ORCAD_G\PROJET_ORCAD9\HUGO\CARTE WIFI 2011\CARTE WIFI 2011-5.SST:
+---------------------------------------------------------
+D22:  0.0500 ROUND  --       4 Draws,       0 Flashes
+D26:  0.0100 ROUND  --      44 Draws,       0 Flashes
+D47:  0.0080 ROUND  --     465 Draws,       5 Flashes
+D48:  0.0118 ROUND  --       8 Draws,       0 Flashes
+D49:  0.0197 ROUND  --       4 Draws,       0 Flashes
+D50:  0.0040 ROUND  --       3 Draws,       0 Flashes
+D51:  0.0098 ROUND  --      24 Draws,       0 Flashes
+D52:  0.0070 ROUND  --       8 Draws,       0 Flashes
+---------------------------------------------------------
+  8 D-Codes      -----     560 Draws,       5 Flashes
+
+*********************************************************
+
+Output file: D:\ORCAD_G\PROJET_ORCAD9\HUGO\CARTE WIFI 2011\CARTE WIFI 2011-5.AST
+
+Aperture totals for D:\ORCAD_G\PROJET_ORCAD9\HUGO\CARTE WIFI 2011\CARTE WIFI 2011-5.AST:
+---------------------------------------------------------
+D22:  0.0500 ROUND  --       4 Draws,       0 Flashes
+D32:  0.0850 ROUND  --       0 Draws,      10 Flashes
+D33:  0.0800 ROUND  --       0 Draws,      93 Flashes
+D34:  0.0800 SQUARE --       0 Draws,       8 Flashes
+D35:  0.1000 ROUND  --       0 Draws,       7 Flashes
+D36:  0.0850 SQUARE --       0 Draws,       2 Flashes
+D37:  0.0750 ROUND  --       0 Draws,       2 Flashes
+D38:  0.0750 SQUARE --       0 Draws,       2 Flashes
+D39:  0.1300 ROUND  --       0 Draws,       1 Flashes
+D40:  0.1300 SQUARE --       0 Draws,       1 Flashes
+D47:  0.0080 ROUND  --    1040 Draws,       7 Flashes
+D50:  0.0040 ROUND  --      49 Draws,       0 Flashes
+D51:  0.0098 ROUND  --      94 Draws,       0 Flashes
+D52:  0.0070 ROUND  --      49 Draws,       0 Flashes
+---------------------------------------------------------
+ 14 D-Codes      -----    1236 Draws,     133 Flashes
+
+*********************************************************
+
+Output file: D:\ORCAD_G\PROJET_ORCAD9\HUGO\CARTE WIFI 2011\CARTE WIFI 2011-5.DRD
+
+Aperture totals for D:\ORCAD_G\PROJET_ORCAD9\HUGO\CARTE WIFI 2011\CARTE WIFI 2011-5.DRD:
+---------------------------------------------------------
+D22:  0.0500 ROUND  --       4 Draws,       0 Flashes
+D26:  0.0100 ROUND  --     817 Draws,       0 Flashes
+---------------------------------------------------------
+  2 D-Codes      -----     821 Draws,       0 Flashes
+
+
+*********************************************************
+
+Aperture totals for entire project:
+---------------------------------------------------------
+D10:  0.0850 ROUND  --       0 Draws,      10 Flashes
+D11:  0.0800 ROUND  --       0 Draws,      93 Flashes
+D12:  0.0800 SQUARE --       0 Draws,       8 Flashes
+D13:  0.1000 ROUND  --       0 Draws,       7 Flashes
+D14:  0.0850 SQUARE --       0 Draws,       2 Flashes
+D15:  0.0750 ROUND  --       0 Draws,       2 Flashes
+D16:  0.0750 SQUARE --       0 Draws,       2 Flashes
+D17:  0.0787 x 0.0236 RECTANGLE -----     116 Flashes
+D18:  0.1300 ROUND  --       0 Draws,       1 Flashes
+D19:  0.1300 SQUARE --       0 Draws,       1 Flashes
+D20:  0.0700 x 0.0250 RECTANGLE -----       8 Flashes
+D21:  0.0700 ROUND  --       0 Draws,       1 Flashes
+D22:  0.0500 ROUND  --      24 Draws,       0 Flashes
+D23:  0.0700 ROUND  --       0 Draws,       1 Flashes
+D24:  0.0250 ROUND  --      88 Draws,       1 Flashes
+D25:  0.0700 ROUND  --       0 Draws,      13 Flashes
+D26:  0.0100 ROUND  --    1102 Draws,       0 Flashes
+D27:  0.0300 ROUND  --       3 Draws,       0 Flashes
+D28:  0.0150 ROUND  --      83 Draws,       0 Flashes
+D29:  0.0200 ROUND  --       3 Draws,       0 Flashes
+D30:  0.0140 ROUND  --       0 Draws,      14 Flashes
+D31:  0.0140 ROUND  --       0 Draws,     254 Flashes
+D32:  0.0850 ROUND  --       0 Draws,      40 Flashes
+D33:  0.0800 ROUND  --       0 Draws,     372 Flashes
+D34:  0.0800 SQUARE --       0 Draws,      32 Flashes
+D35:  0.1000 ROUND  --       0 Draws,      28 Flashes
+D36:  0.0850 SQUARE --       0 Draws,       8 Flashes
+D37:  0.0750 ROUND  --       0 Draws,       8 Flashes
+D38:  0.0750 SQUARE --       0 Draws,       8 Flashes
+D39:  0.1300 ROUND  --       0 Draws,       4 Flashes
+D40:  0.1300 SQUARE --       0 Draws,       4 Flashes
+D41:  0.0700 ROUND  --       0 Draws,       1 Flashes
+D42:  0.0400 ROUND  --      13 Draws,       0 Flashes
+D43:  0.0789 x 0.0236 RECTANGLE -----     116 Flashes
+D44:  0.0750 x 0.0300 RECTANGLE -----       8 Flashes
+D45:  0.0550 ROUND  --       0 Draws,       2 Flashes
+D46:  0.0550 ROUND  --       0 Draws,      14 Flashes
+D47:  0.0080 ROUND  --    1505 Draws,      12 Flashes
+D48:  0.0118 ROUND  --       8 Draws,       0 Flashes
+D49:  0.0197 ROUND  --       4 Draws,       0 Flashes
+D50:  0.0040 ROUND  --      52 Draws,       0 Flashes
+D51:  0.0098 ROUND  --     118 Draws,       0 Flashes
+D52:  0.0070 ROUND  --      57 Draws,       0 Flashes
+---------------------------------------------------------
+ 43 D-Codes      -----    3060 Draws,    1191 Flashes
+
+
+No warnings or errors.
